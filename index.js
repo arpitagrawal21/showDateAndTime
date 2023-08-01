@@ -27,6 +27,6 @@ if(second<10){
 const currentDay = dayName[day];
 const currentTime = `${hour}:${minute}:${second} ${prepand}`;
 
-
+console.log("digital clock");
 console.log("Today is : "+ currentDay) 
 console.log("Current Time is : "+currentTime);

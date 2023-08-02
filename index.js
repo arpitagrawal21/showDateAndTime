@@ -1,9 +1,12 @@
 
-const now = new Date();
-const day = now.getDay();
-let hour = now.getHours();
-let minute = now.getMinutes();
-let second = now.getSeconds();
+const today = new Date();
+const day = today.getDay();
+const date = today.getDate();
+const month = today.getMonth();
+const year = today.getFullYear();
+let hour = today.getHours();
+let minute = today.getMinutes();
+let second = today.getSeconds();
 const dayName = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 let prepand = (hour>=12) ? "PM" : "AM";
@@ -26,7 +29,9 @@ if(second<10){
 
 const currentDay = dayName[day];
 const currentTime = `${hour}:${minute}:${second} ${prepand}`;
+const currentDate = `${date}-${month}-${year}`;
 
 
 console.log("Today is : "+ currentDay) 
 console.log("Current Time is : "+currentTime);
+console.log("Current Date is :"+currentDate);
